@@ -1,0 +1,12 @@
+\documentclass{article} 
+\usepackage{neuralnetwork} 
+       \begin{document} 
+            \begin{neuralnetwork}
+                 \newcommand{\x}[2]{$x_#2$}
+                 \newcommand{\h}[2]{$h_#2$}
+                 \newcommand{\y}[2]{$y_#2$}
+                 \inputlayer[count=3, bias=true, text=\x]{} 
+                 \hiddenlayer[count=2, text=\h]{} \linklayers
+                 \outputlayer[count=1, text=\y]{} \linklayers
+           \end{neuralnetwork} 
+       \end{document}
