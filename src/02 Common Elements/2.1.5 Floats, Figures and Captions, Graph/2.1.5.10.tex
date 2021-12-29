@@ -1,0 +1,15 @@
+\documentclass{article}
+ 
+\usepackage{pgfplots}
+ 
+\pgfplotsset{compat = newest}
+ 
+\begin{document}
+ 
+\begin{tikzpicture}
+    \begin{axis}[]
+        \addplot[] {exp(-x/90)*( cos(deg(x)) + cos(deg(x))/10 )};
+    \end{axis}
+\end{tikzpicture}
+ 
+\end{document}

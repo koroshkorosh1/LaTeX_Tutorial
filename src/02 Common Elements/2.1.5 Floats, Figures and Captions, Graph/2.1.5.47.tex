@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+    \begin{document}
+        \begin{tikzpicture}[->,>=stealth',level/.style={sibling distance = 5cm/#1,
+ level distance = 1.5cm}] 
+   \node [arn_n] {66150}
+    child{ node [arn_r] {210} 
+            child{ node [arn_n] {10} 
+            	child{ node [arn_r] {5} } 
+							child{ node [arn_x] {2}}
+            }
+            child{ node [arn_n] {21}
+							child{ node [arn_r] {7}}
+							child{ node [arn_x] {3}}
+            }                            
+    }
+    child{ node [arn_r] {315}
+            child{ node [arn_n] {35} 
+							child{ node [arn_r] {7}}
+							child{ node [arn_r] {5}}
+            }
+            child{ node [arn_n] {9}
+							child{ node [arn_r] {3}}
+							child{ node [arn_x] {3}}
+            }
+		}
+ 
+          \end{tikzpicture}
+     \end{document}

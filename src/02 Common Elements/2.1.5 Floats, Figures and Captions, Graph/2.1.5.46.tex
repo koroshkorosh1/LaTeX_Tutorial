@@ -1,0 +1,21 @@
+\documentclass{article} 
+\usepackage{neuralnetwork} 
+       \begin{document} 
+            \begin{neuralnetwork}
+                 \newcommand{\x}[2]{$x_#2$}
+                 \newcommand{\h}[2]{$h_#2$}
+                 \newcommand{\y}[2]{$y_#2$}
+                 \newcommand{\s}[2]{$s_#2$}
+                 
+                 
+                 \newcommand{\w}[4] {$v_{#2,#4}$}
+                 \setdefaultlinklabel{\w}
+                 
+                 
+                 
+                 \inputlayer[count=4, bias=true, text=\x]{} 
+                 \hiddenlayer[count=3, text=\h]{} \linklayers
+                 \hiddenlayer[count=2, text=\y]{} \linklayers
+                 \outputlayer[count=1, text=\s]{} \linklayers
+           \end{neuralnetwork} 
+       \end{document}

@@ -1,0 +1,14 @@
+\documentclass[border=10pt]{article}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\begin{document}
+
+ \begin{tikzpicture}
+[every node/.style={fill, circle, inner sep = 1pt}]
+\node[label=above:$A$] (A) at (-1,-1) {};
+\node[label=above:$B$] (B) at ($(A) + (2, 1.5)$) {};
+\end{tikzpicture}
+
+
+
+\end{document}

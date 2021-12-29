@@ -1,0 +1,21 @@
+\documentclass[border=10pt]{article}
+\usepackage{pgfplots}
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}
+\addplot[color=blue]{exp(2*x)};
+\end{axis}
+\end{tikzpicture}
+%Here ends the furst plot
+\hskip 5pt
+%Here begins the 3d plot
+\begin{tikzpicture}
+\begin{axis}
+\addplot3[
+    surf,
+]
+{exp(-x^2-y^2)*2*x};
+\end{axis}
+\end{tikzpicture}
+\end{document}

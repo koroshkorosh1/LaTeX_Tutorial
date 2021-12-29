@@ -1,0 +1,11 @@
+\documentclass[border=10pt]{article}
+\usepackage{pgfplots}
+\begin{document}
+
+\begin{tikzpicture}
+\foreach \r in {1, 0.8,..., 0.2}
+\foreach \i in {0,...,5}
+\draw (360/5*\i:\r cm) -- ({360/5*(\i+1)}:\r cm);
+\end{tikzpicture}
+
+\end{document}

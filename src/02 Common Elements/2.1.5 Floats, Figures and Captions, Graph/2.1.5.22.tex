@@ -1,0 +1,37 @@
+\documentclass[11pt]{article}
+
+% graphics
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{width=7.5cm,compat=1.12}
+\usepgfplotslibrary{fillbetween}
+
+
+\begin{document}
+
+\begin{tikzpicture}
+
+  \pgfplotsset{
+      scale only axis,
+  }
+
+  \begin{axis}[
+    xlabel=$A$,
+    ylabel=$B$,
+  ]
+    \addplot[only marks, mark=x]
+    coordinates{ % plot 1 data set
+      (0.31,0.28)
+      (0.24,0.50)
+      (0.52,0.1)
+      % more points...
+    }; \label{plot_one}
+
+    % plot 1 legend entry
+    \addlegendimage{/pgfplots/refstyle=plot_one}
+    \addlegendentry{plot 1}
+  \end{axis}
+
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,36 @@
+
+\documentclass[12pt,]{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\newcommand{\species}[1]{\textit{#1} sp.}
+\begin{document}
+
+\listoffigures
+\section{Introduction}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{gull}
+        \caption{A gull}
+        \label{fig:gull}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{tiger}
+        \caption{A tiger}
+        \label{fig:tiger}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{metro}
+        \caption{A metro}
+        \label{fig:mouse}
+    \end{subfigure}
+    \caption{Pictures of animals & . . . }\label{fig & . . .}
+\end{figure}
+
+\end{document}

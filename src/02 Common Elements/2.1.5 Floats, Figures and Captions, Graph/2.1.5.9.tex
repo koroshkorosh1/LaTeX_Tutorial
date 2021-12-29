@@ -1,0 +1,34 @@
+\documentclass{article}
+
+% have hyperref package before float in order to get strange errors with .\theHfloatbox
+\usepackage{hyperref}
+
+\usepackage{float}
+
+% allows use of "@" in control sequence names
+\makeatletter
+
+% this creates a custom and simpler ruled box style
+\newcommand\floatc@simplerule[2]{{\@fs@cfont #1 #2}\par}
+\newcommand\fs@simplerule{\def\@fs@cfont{\bfseries}\let\@fs@capt\floatc@simplerule
+  \def\@fs@pre{\hrule height.8pt depth0pt \kern4pt}%
+  \def\@fs@post{\kern4pt\hrule height.8pt depth0pt \kern4pt \relax}%
+  \def\@fs@mid{\kern8pt}%
+  \let\@fs@iftopcapt\iftrue}
+
+% this code block defines the new and custom floatbox float environment
+\floatstyle{simplerule}
+\newfloat{floatbox}{thp}{lob}[section]
+\floatname{floatbox}{Text Box}
+
+\begin{document}
+
+\begin{floatbox}{r}{}
+  \textit{Bootstrapping} is a resampling technique used 
+  for robustly estimating statistical quantities, such as 
+  the model fit $R^2$. It offers some protection against 
+  the sampling bias.
+  \caption{Bootstrapping}
+\end{floatbox}
+
+\end{document}

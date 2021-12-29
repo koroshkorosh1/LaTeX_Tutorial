@@ -1,0 +1,37 @@
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[english]{babel}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{figure}
+  \caption{A picture of a gull.}
+  \centering
+    \includegraphics[width=0.5\textwidth]{metro}
+\end{figure}
+
+\begin{figure}
+  \centering
+    \reflectbox{%
+      \includegraphics[width=0.5\textwidth]{metro station!}}
+  \caption{A picture of the Namazi metro station!}
+\end{figure}
+
+\begin{table}
+  \centering
+    \begin{tabular}{| l c r |}
+    \hline
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9 \\
+    \hline
+    \end{tabular}
+  \caption{A simple table}
+\end{table}
+
+Notice how the tables and figures
+have independent counters.
+
+\end{document}

@@ -1,0 +1,14 @@
+\documentclass[border=10pt]{article}
+\usepackage{pgfplots}
+\begin{document}
+
+\begin{tikzpicture}
+% Direkte eingabe der Kontrollpunkte:
+\draw (0,0) .. controls (0,1) and (1,1) .. (2, 2);
+% Die Line kr¨ummt sich um 30 Grad nach Links:
+\draw[bend left=30] (3,0) to (4, 2);
+% aus- und eingehenden Winkel festlegen:
+\draw[out=90, in=-90] (6,0) to (7, 2);
+\end{tikzpicture}
+
+\end{document}
