@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+
+\begin{document}
+
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\begin{tabularx}{\textwidth}{ |l|R|l|R| }
+  \hline
+  label 1 & label 2 & label 3 & label 4 \\
+  \hline 
+  item 1  & item 2  & item 3  & item 4  \\
+  \hline
+\end{tabularx}
+
+\end{document}

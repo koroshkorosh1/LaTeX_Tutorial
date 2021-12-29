@@ -1,0 +1,14 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{dcolumn}
+
+   \begin{document}
+             \ldots
+             \newcolumntype{d}[1]{D{.}{\cdot}{#1} }
+                  \begin{tabular}{l r c d{1} }
+                      Left & Right & Center&\mathrm{Decimal}\\
+                              1 & 2 & 3 & 4\\
+                             11 & 22 & 33 & 44\\
+                            1.1 & 2.2 & 3.3 & 4.4\\
+                  \end{tabular}
+   \end{document}

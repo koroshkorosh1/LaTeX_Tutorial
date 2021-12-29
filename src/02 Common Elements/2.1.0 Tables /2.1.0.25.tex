@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+
+\begin{document}
+
+\begin{tabularx}{1\textwidth}{ |>{\setlength\hsize{1\hsize}\centering}X|>{\setlength\hsize{1\hsize}\raggedleft}X@{} >{\setlength\hsize{1\hsize}\raggedright}X|>{\setlength\hsize{1\hsize}\centering}X| } 
+  \hline
+Label 1 & \multicolumn{2}{>{\centering\setlength\hsize{2\hsize} }X|}{Label 2} & Label 3\tabularnewline
+\hline 
+  123  & 123  & 456  & 123  \tabularnewline
+  \hline
+  123  & 123  & 456  & 123  \tabularnewline
+  \hline
+\end{tabularx}
+
+\end{document}
